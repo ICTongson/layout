@@ -1,0 +1,84 @@
+/* Modern CSS Reset for Vite + React */
+
+/* 1. Box sizing rules & smooth sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Prevent margin collapse & set body defaults */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Core html/body setup */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/* 4. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Avoid text overflow in long headers */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Modern text defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* 8. Remove list styles when class is used (optional helper) */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* 9. Root stacking context for React modals / portals */
+#root {
+  isolation: isolate;
+}
